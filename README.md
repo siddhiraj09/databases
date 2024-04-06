@@ -48,14 +48,14 @@ We used html, css and and JS to design the frontend, the login page and differen
 This brings home page of the webapp. Different pages open for different credentials
 
 ### Login Screen
- ![Login Screen]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.14.55.jpeg  )(https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.14.56.jpeg)
+ ![Login Screen]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.14.55.jpeg  )
 
 ### Users
 1. Admin: He can view, edit, delete and filter in all tables
  ![Admin tables]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.14.55%20(1).jpeg)
 2. Student:  He can view only view all tables
  ![Student tables]( https://github.com/siddhiraj09/databases/blob/main/img/stud.jpeg)
-3. Caretaker:  He can view all tables, but edit and delete entries in certain specific tables only. Also he can't add new data. Data addition can be done by admin only. 
+3. Caretaker: He can view all tables, but edit and delete entries in certain specific tables only. Also he can't add new data. Data addition can be done by admin only. 
  ![Caretaker tables]( https://github.com/siddhiraj09/databases/blob/main/img/care.jpeg)
 
 
