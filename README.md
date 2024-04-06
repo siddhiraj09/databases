@@ -62,12 +62,12 @@ This brings home page of the webapp. Different pages open for different credenti
  ### Operations
 1. Insert
     * Before, a form opens ![Insert Before]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.19.38%20(2).jpeg   )
-    * After ![Insert After](https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.19.37.jpeg)( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.19.38%20(3).jpeg    )
+    * After ![Insert After](https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.19.37.jpeg)
 2. Update
     * Before, a form opens ![Update Before](   https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.32.50.jpeg  )
     * After ![Update After]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.32.50%20(1).jpeg )
 3. Delete
-    * Before, a form opens ![Delete Before]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.21.53.jpeg )(https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.21.53.jpeg)
+    * Before, a form opens ![Delete Before]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.21.53.jpeg )
     * After ![Delete After]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.21.54%20(1).jpeg )
 4. Where (Filter)
     * Before, a form opens. Enter your query ![Filter Before](https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.14.56%20(1).jpeg)
