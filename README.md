@@ -48,36 +48,35 @@ We used html, css and and JS to design the frontend, the login page and differen
 This brings home page of the webapp. Different pages open for different credentials
 
 ### Login Screen
- ![Login Screen]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.14.55.jpeg  )(https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.14.56.jpeg)
+ ![Login Screen]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.14.55.jpeg  )
 
 ### Users
 1. Admin: He can view, edit, delete and filter in all tables
- ![Admin tables]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.14.55%20(1).jpeg)
+ ![Admin tables]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.14.55%20(1).jpeg)
 2. Student:  He can view only view all tables
- ![Student tables]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.14.55%20(1).jpeg)
-3. Caretaker:  He can view all tables, but edit and delete entries in certain specific tables only. Also he can't add new data. Data addition can be done by admin only. 
- ![Caretaker tables]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.14.55%20(1).jpeg)
+ ![Student tables]( https://github.com/siddhiraj09/databases/blob/main/img/stud.jpeg)
+3. Caretaker: He can view all tables, but edit and delete entries in certain specific tables only. Also he can't add new data. Data addition can be done by admin only. 
+ ![Caretaker tables]( https://github.com/siddhiraj09/databases/blob/main/img/care.jpeg)
 
 
  ### Operations
 1. Insert
-    * Before, a form opens ![Insert Before]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.19.38%20(2).jpeg   )
-    * After ![Insert After](https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.19.37.jpeg)( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.19.38%20(3).jpeg    )
+    * Before, a form opens ![Insert Before]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.19.38%20(2).jpeg   )
+    * After ![Insert After](https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.19.37.jpeg)( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.19.38%20(3).jpeg    )
 2. Update
-    * Before, a form opens ![Update Before](   https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.32.50.jpeg  )
-    * After ![Update After]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.32.50%20(2).jpeg    )
+    * Before, a form opens ![Update Before](   https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.32.50.jpeg  )
+    * After ![Update After]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.32.50%20(1).jpeg )
 3. Delete
-    * Before, a form opens ![Delete Before]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.36.55%20(1).jpeg )(https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.21.53.jpeg)
-    * Query ![Delete Before]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.36.55%20(2).jpeg   )
-    * After ![Delete After](https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.21.54.jpeg    )
+    * Before, a form opens ![Delete Before]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.21.53.jpeg )(https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.21.53.jpeg)
+    * After ![Delete After]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.21.54%20(1).jpeg )
 4. Where (Filter)
-    * Before, a form opens. Enter your query ![Filter Before](https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.14.56%20(1).jpeg)
-    * Query ![Filter After](https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.14.57%20(2).jpeg)
-    * After ![Filter After](https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.14.57%20(1).jpeg )
+    * Before, a form opens. Enter your query ![Filter Before](https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.14.56%20(1).jpeg)
+    * Query ![Filter After](https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.14.57%20(2).jpeg)
+    * After ![Filter After](https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.14.57%20(1).jpeg )
 5. Delete Multiple Entries
-    * Before, a form opens ![Delete all Before]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.36.55%20(1).jpeg  )
-    * Query ![Delete all Before]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.36.55%20(2).jpeg )
-    * After ![Delete all After]( https://github.com/siddhiraj09/databases/blob/main/WhatsApp%20Image%202024-04-06%20at%2016.36.55.jpeg )
+    * Before, a form opens ![Delete all Before]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.36.55%20(1).jpeg  )
+    * Query ![Delete all Before]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.36.55%20(2).jpeg )
+    * After ![Delete all After]( https://github.com/siddhiraj09/databases/blob/main/img/WhatsApp%20Image%202024-04-06%20at%2016.36.55.jpeg )
 
 <!-- ### Student
 1. Student is only allowed to view specific tables. He can't insert, delete or update any information.
