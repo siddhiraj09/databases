@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session
-
+from flask_login import LoginManager, UserMixin
+from flask_sqlalchemy import SQLAlchemy
+from flask_bcrypt import Bcrypt
 from flask_mysqldb import MySQL
+import time
+import os
 # from flask_oauthlib.client import OAuth as oauth
-
+from authlib.integrations.flask_client import OAuth
 import socket
 
 app = Flask(__name__)
@@ -10,12 +14,15 @@ app.secret_key = 'many random bytes'
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'password' 
+app.config['MYSQL_PASSWORD'] = 'NewPass14' 
 app.config['MYSQL_DB'] = 'hostel_management_final'
+app.config['SERVER_NAME'] = '127.0.0.1:5000'
 # app.config['SERVER_NAME'] = 'localhost:5000'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////usr/local/mysql/data/hostel_management_final.db'/
+# app.config.from_object('app.config.Config')
 
 mysql = MySQL(app)
-
+oauth = OAuth(app)
 # @app.route('/google')
 # def google():
 #     # Google Oauth Config
@@ -46,6 +53,45 @@ def logout():
     return redirect(url_for('Index'))  # Redirect to the login page
 
 
+@app.route('/google')
+def googlee():
+    #copy paste here
+    redirect_uri= url_for('google_auth',_external=True)
+    print(redirect_uri)
+    print(oauth.google.authorize_redirect(redirect_uri))
+    return oauth.google.authorize_redirect(redirect_uri)
+
+@app.route('/google/auth')
+def google_auth():
+    # print("hirva")
+    token = oauth.google.authorize_access_token()
+    print("token", token )
+    user = oauth.google.parse_id_token(token, nonce=token['userinfo']['nonce'])
+    print(" Google User ", user)
+    # return render_template('signup.html')
+    return redirect(url_for('Index'))
+
+
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
+@app.route('/sign_up', methods = ['POST'])
+def sign_up():
+    if request.method =='POST':
+        username = request.form['username']
+        password = request.form['password']
+        cur = mysql.connection.cursor()
+        try:
+            cur.execute("INSERT INTO users (username, password) VALUES (%s, %s);", (username, password)) #error here 
+            mysql.connection.commit()
+            flash("Data Updated Successfully")
+        except Exception as e:
+            flash('Error adding person: %s', str(e))
+        finally:
+            cur.close()
+    return redirect(url_for('Index'))
+
 @app.route('/login', methods = ['POST'])
 def login():
     # Simulating authentication - Replace with actual authentication logic
@@ -55,32 +101,49 @@ def login():
         cur = mysql.connection.cursor()
         cur.execute("SELECT * FROM users WHERE username = %s AND password = %s", (username, password))
         user = cur.fetchone()
-        cur.close()
         if user:
+            # print(user, "user")
             session['logged_in'] = True
-            session['user_type'] = username
+            session['user_type'] = username 
         else:
+            if 'attempts' not in session:
+                session['attempts'] = 1
+            else:
+                session['attempts']+=1
+            if session['attempts']>=3:
+                time.sleep(2**session['attempts'])
             flash("Incorrect Credentials")
-            session['logged_in'] = False
-            
+            session['logged_in'] = False 
+        cur.close()
         return redirect(url_for('Index'))
     
-@app.route('/')
+@app.route('/index')
 def Index():
     if 'logged_in' not in session:
         session['logged_in'] = False  # Initialize session variable if not set
     if not session['logged_in']:
         return render_template('login.html')
     
+    
+    username = session['user_type']
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM users")
+    user = cur.fetchone()
     if session['user_type']=='admin':
         return render_template('admin.html')
     elif session['user_type']=='caretaker':
         return render_template('caretaker2.html')
     elif session['user_type']=='student':
         return render_template('student.html')
-    
+    elif user:
+        return render_template('student.html')
     else:
         return render_template('login.html')
+
+
+@app.route('/')
+def base():
+    return render_template('base.html')
 
 @app.route('/toggle')
 def Toggle():
