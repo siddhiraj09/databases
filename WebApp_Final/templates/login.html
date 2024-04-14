@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('iitgn_bg.jpg'); 
+            background-size: cover;
+        }
+        table {
+            width: 100%;
+            /* Make the table spread across the page */
+            border-collapse: collapse;
+            /* Collapse borders */
+        }
+    
+        th,
+        td {
+            border: 1px solid black;
+            /* Add borders to cells */
+            padding: 8px;
+            /* Add padding to cells */
+            text-align: left;
+            /* Align text to the left */
+        }
+        .dropbtn {
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        width: calc(33.33% - 10px); /* Calculate width to evenly spread across */
+        box-sizing: border-box; /* Include padding and border in width calculation */
+        text-align: center;
+        }
+
+    .dropbtn:hover {
+        background-color: #45a049;
+    }
+
+    </style>
+</head>
+
+<body>
+    <link href="{{url_for('static', filename = 'css/styles.css')}}" rel="stylesheet">
+                    <div class="container">
+                    
+                        <h2>Login</h2>
+                        <form id="loginForm" action="\login" method="POST">
+                            <input type="text" name="username" placeholder="Username">
+                            <input type="password" name="password" placeholder="Password">
+                            <input type="submit" value="Login">
+                        </form>
+                    </div>
+                    <h3 class="norms">Please refer to the Hostel Norms <a
+                            href="https://drive.google.com/file/d/1kmRaD4KuNDWWBXg94Y9paZMgisQmnrXr/view?usp=sharing">here</a></h3>
+                    
+                    <button id="Information" class="dropbtn" onclick="showHATCordinator()"> HAT Coordinators/Convener
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <button id="Information" class="dropbtn" onclick="showSenators()"> Senators
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <button id="Information" class="dropbtn" onclick="showSecretaries()"> Secretaries
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    
+                    <table id="Senators" class="info">
+                        <tr>
+                            <th>Position</th>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Program</th>
+                        </tr>
+                        <tr>
+                            <td>Senator</td>
+                            <td>Dhruv Gupta</td>
+                            <td>21110070</td>
+                            <td>guptadhruv@iitgn.ac.in</td>
+                            <td>Btech'21</td>
+                        </tr>
+                        <tr>
+                            <td>Senator</td>
+                            <td>Shrijan Sahu</td>
+                            <td>22110052</td>
+                            <td>sahushrijan@iitgn.ac.in</td>
+                            <td>Btech '21</td>
+                        </tr>
+                        <tr>
+                            <td>Senator</td>
+                            <td>Nishant Tatar</td>
+                            <td>22310065</td>
+                            <td>tatarnishant@iitgn.ac.in</td>
+                            <td>Btech'21</td>
+                        </tr>
+                    </table>
+                    <table id="HAT" class="info">
+                        <tr>
+                            <th>Role</th>
+                            <th>Hostel</th>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Program</th>
+                        </tr>
+                        <tr>
+                            <td>HAT Coordinator</td>
+                            <td>Beauki</td>
+                            <td>Prisha Maru</td>
+                            <td>23570005</td>
+                            <td>prisha.maru@iitgn.ac.in</td>
+                            <td>MSc '23</td>
+                        </tr>
+                        <tr>
+                            <td>HAT Coordinator</td>
+                            <td>Chimair</td>
+                            <td>Bukke Ashwini Shankar</td>
+                            <td>22110052</td>
+                            <td>ashwini.bukke@iitgn.ac.in</td>
+                            <td>B.Tech '22</td>
+                        </tr>
+                        <tr>
+                            <td>HAT Coordinator</td>
+                            <td>Duven</td>
+                            <td>Prasad Namdev Pawar</td>
+                            <td>22310065</td>
+                            <td>prasad.pawar@iitgn.ac.in</td>
+                            <td>Phd '22</td>
+                        </tr>
+                        <tr>
+                            <td>HAT Coordinator</td>
+                            <td>Emiet</td>
+                            <td>Abhishek Niranjan Mandlik</td>
+                            <td>21110122</td>
+                            <td>abhishekmandlik@iitgn.ac.in</td>
+                            <td>B.Tech '21</td>
+                        </tr>
+                        <tr>
+                            <td>HAT Coordinator</td>
+                            <td>Griwiksh</td>
+                            <td>Aaditya Roy</td>
+                            <td>22110001</td>
+                            <td>aaditya.roy@iitgn.ac.in</td>
+                            <td>B.Tech '22</td>
+                        </tr>
+                        <tr>
+                            <td>HAT Coordinator</td>
+                            <td>Hiqom</td>
+                            <td>Chandra Shekhar</td>
+                            <td>22110056</td>
+                            <td>chandra.shekhar@iitgn.ac.in</td>
+                            <td>B.Tech '22</td>
+                        </tr>
+                        <tr>
+                            <td>HAT Coordinator</td>
+                            <td>Ijokha</td>
+                            <td>Sheetal</td>
+                            <td>23110299</td>
+                            <td>23110299@iitgn.ac.in</td>
+                            <td>B.Tech'23</td>
+                        </tr>
+                        <tr>
+                            <td>HAT Coordinator</td>
+                            <td>Jurqia</td>
+                            <td>Pramith Joy Kalabandi</td>
+                            <td>23110152</td>
+                            <td>23110152@iitgn.ac.in</td>
+                            <td>B. Tech'23</td>
+                        </tr>
+                        <tr>
+                            <td>HAT Coordinator</td>
+                            <td>Kyzeel</td>
+                            <td>Nandan Desai</td>
+                            <td>23110088</td>
+                            <td>23110088@iitgn.ac.in</td>
+                            <td>B.Tech'23</td>
+                        </tr>
+                        <tr>
+                            <td>HAT Coordinator</td>
+                            <td>Lekhaag</td>
+                            <td>Vikask Kumar Gupta</td>
+                            <td>23510135</td>
+                            <td>vikash.gupta@iitgn.ac.in</td>
+                            <td>Msc '23</td>
+                        </tr>
+                    </table>
+                    <table id="Secretaries" class="info">
+                        <tr>
+                            <th>Position</th>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Program</th>
+                        </tr>
+                        <tr>
+                            <td>Welfare Secy</td>
+                            <td>Mahendra</td>
+                            <td>21110070</td>
+                            <td>mahendra@iitgn.ac.in</td>
+                            <td>Btech'21</td>
+                        </tr>
+                        <tr>
+                            <td>General Secy</td>
+                            <td>Yash Ahire</td>
+                            <td>22110052</td>
+                            <td>ahireyash@iitgn.ac.in</td>
+                            <td>Btech '21</td>
+                        </tr>
+                        <tr>
+                            <td>Sports Secy</td>
+                            <td>Adit Rambia</td>
+                            <td>22310065</td>
+                            <td>rambiaadit@iitgn.ac.in</td>
+                            <td>Btech'21</td>
+                        </tr>
+                        <tr>
+                            <td>Cultural Secy</td>
+                            <td>Abhishek Meena</td>
+                            <td>22310065</td>
+                            <td>meenaabhishek@iitgn.ac.in</td>
+                            <td>Btech'21</td>
+                        </tr>
+                        <tr>
+                            <td>IRP Secy</td>
+                            <td>Parth Deshpande</td>
+                            <td>22310065</td>
+                            <td>deshpandeparth@iitgn.ac.in</td>
+                            <td>Btech'21</td>
+                        </tr>
+                        <tr>
+                            <td>Academic Secy</td>
+                            <td>Aditya Gupte</td>
+                            <td>22310065</td>
+                            <td>rambiaadit@iitgn.ac.in</td>
+                            <td>Btech'21</td>
+                        </tr>
+                        <tr>
+                            <td>Technical Secy</td>
+                            <td>Naman Dharmani</td>
+                            <td>22310065</td>
+                            <td>dharmaninaman@iitgn.ac.in</td>
+                            <td>Btech'21</td>
+                        </tr>
+                    </table>
+
+        <script>
+            function showHATCordinator() {
+                var table_hat = document.getElementById("HAT");
+                var table_secretaries = document.getElementById("Secretaries");
+                var table_senators = document.getElementById("Senators");
+                
+                table_secretaries.style.display = "none";
+                table_senators.style.display = "none"
+                table_hat.style.display = "table"; // Show the table
+            }
+            function showSecretaries() {
+                    var table_hat = document.getElementById("HAT");
+                    var table_secretaries = document.getElementById("Secretaries");
+                    var table_senators = document.getElementById("Senators");
+
+                    table_secretaries.style.display = "table";
+                    table_senators.style.display = "none"
+                    table_hat.style.display = "none"; // Show the table
+            }
+            function showSenators() {
+                    var table_hat = document.getElementById("HAT");
+                    var table_secretaries = document.getElementById("Secretaries");
+                    var table_senators = document.getElementById("Senators");
+
+                    table_secretaries.style.display = "none";
+                    table_senators.style.display = "table"
+                    table_hat.style.display = "none"; // Show the table
+            }
+        </script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

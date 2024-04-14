@@ -35,37 +35,12 @@
                 </button>
             </div>
             <div class="dropdown">
-                <button id="person_details_nav" class="dropbtn"> Person Details
-                    <i class="fa fa-caret-down"></i>
-                </button>
-            </div>
-            <div class="dropdown">
-                <button id="stay_rooms_nav" class="dropbtn"> Stay Rooms
-                    <i class="fa fa-caret-down"></i>
-                </button>
-            </div>
-            <div class="dropdown">
-                <button id="housekeeper_nav" class="dropbtn"> Housekeeper
-                    <i class="fa fa-caret-down"></i>
-                </button>
-            </div>
-            <div class="dropdown">
-                <button id="room_allocation_nav" class="dropbtn"> Room Allocation
-                    <i class="fa fa-caret-down"></i>
-                </button>
-            </div>
-            <div class="dropdown">
                 <button id="furniture_utils_nav" class="dropbtn"> Furniture and Utilities
                     <i class="fa fa-caret-down"></i>
                 </button>
             </div>
             <div class="dropdown">
                 <button id="eateries_shops_nav" class="dropbtn"> Eateries/Shops
-                    <i class="fa fa-caret-down"></i>
-                </button>
-            </div>
-            <div class="dropdown">
-                <button id="rooms_nav" class="dropbtn"> Rooms
                     <i class="fa fa-caret-down"></i>
                 </button>
             </div>
@@ -79,6 +54,7 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
             </div>
+            
         </div>
 
         <div class="row">
@@ -194,7 +170,7 @@
                     </tbody>
                 </table>
 
-                <table class="tables table table-striped" id="person_details_table" style="display: none;">
+                <!-- <table class="tables table table-striped" id="person_details_table" style="display: none;">
                     <thead>
                         <tr>
                             <th>Staff ID</th>
@@ -225,17 +201,17 @@
                             <td>{{row.9}}</td>
                             <td>{{row.10}}</td>
                             <td>
-                                <!--<a href="/update/{{row.0}}" class="btn btn-warning btn-xs" data-toggle="modal"
+                                <a href="/update/{{row.0}}" class="btn btn-warning btn-xs" data-toggle="modal"
                                     data-target="#modaledit_person_details">Edit</a>
                                 <a href="/delete/person_details/{{ row.0 }}" class="btn btn-danger btn-xs"
                                     onclick="return confirm('Are You Sure For Delete?')">Delete</a>-->
-                            </td>
+                            <!-- </td>
                         </tr>
                         {% endfor %}
                     </tbody>
-                </table>
+                </table> -->
 
-                <table class="tables table table-striped" id="stay_rooms_table" style="display: none;">
+                <!-- <table class="tables table table-striped" id="stay_rooms_table" style="display: none;">
                     <div id="tableContainer">
                         <thead>
                             <tr>
@@ -251,18 +227,18 @@
                                 <td>{{row.1}}</td>
                                 <td>{{row.2}}</td>
                                 <td>
-                                    <!--<a href="/update/{{row.0}}" class="btn btn-warning btn-xs" data-toggle="modal"
+                                    <a href="/update/{{row.0}}" class="btn btn-warning btn-xs" data-toggle="modal"
                                         data-target="#modaledit_stay_rooms_details">Edit</a>
                                     <a href="/delete/stay_rooms/{{ row.0 }}" class="btn btn-danger btn-xs"
                                         onclick="return confirm('Are You Sure For Delete?')">Delete</a>-->
-                                </td>
+                                <!-- </td>
                             </tr>
                             {% endfor %}
                     </div>
                     </tbody>
-                </table>
+                </table> --> 
 
-                <table class="tables table table-striped" id="housekeeper_table" style="display: none;">
+                <!-- <table class="tables table table-striped" id="housekeeper_table" style="display: none;">
                     <div id="tableContainer">
                         <thead>
                             <tr>
@@ -298,18 +274,18 @@
                                 <td>{{row.11}}</td>
                                 <td>{{row.12}}</td>
                                 <td>
-                                   <!-- <a class="btn btn-warning btn-xs" data-toggle="modal"
+                                   <a class="btn btn-warning btn-xs" data-toggle="modal"
                                         data-target="#modaledit_housekeeper_details">Edit</a>
                                     <a href="/delete/housekeeper/{{ row.0 }}" class="btn btn-danger btn-xs"
                                         onclick="return confirm('Are You Sure For Delete?')">Delete</a>-->
-                                </td>
+                                <!-- </td>
                             </tr>
                             {% endfor %}
                     </div>
                     </tbody>
-                </table>
+                </table> --> 
 
-                <table class="tables table table-striped" id="room_allocation_table" style="display: none;">
+                <!-- <table class="tables table table-striped" id="room_allocation_table" style="display: none;">
                     <div id="tableContainer">
                         <thead>
                             <tr>
@@ -328,12 +304,12 @@
                                         data-target="#modaledit_room_allocation_details">Edit</a>
                                     <a href="/delete/room_allocation/{{ row.0 }}" class="btn btn-danger btn-xs"
                                         onclick="return confirm('Are You Sure For Delete?')">Delete</a>-->
-                                </td>
-                            </tr>
+                                <!-- </td>
+                             </tr>
                             {% endfor %}
                     </div>
                     </tbody>
-                </table>
+                </table> --> 
 
                 <table class="tables table table-striped" id="furniture_utils_table" style="display: none;">
                     <div id="tableContainer">

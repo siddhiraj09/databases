@@ -1,0 +1,156 @@
+
+  .container {
+      max-width: 1000px;
+      margin-top:50px;
+      margin-left: 200px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+ .norms{
+    margin-left:500px ;
+    font-size: 20px;
+ }
+  .page{
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+  }
+
+
+
+
+  /* Navbar container */
+  .navbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial;
+
+  }
+
+  /* Links inside the navbar */
+  .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+
+      text-decoration: none;
+  }
+
+  /* The dropdown container */
+  .dropdown {
+      float: left;
+      overflow: hidden;
+  }
+
+  /* Dropdown button */
+  .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      /* Important for vertical align on mobile phones */
+      margin: 0;
+      /* Important for vertical align on mobile phones */
+  }
+
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+      background-color: green;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: #ddd;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            /* Specify a better font stack */
+        }
+    
+        .user-profile h2 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #333;
+            /* Darker color for better readability */
+        }
+    
+        .user-profile p {
+            font-size: 16px;
+            color: #666;
+            /* Slightly darker color for better contrast */
+            margin: 0;
+            /* Remove default margins */
+        }
+
+.clicked_eateries{
+    background-color: gray;
+}
+
+#Secretaries{
+    display: none;
+}
+
+#HAT{
+    display: none;
+}
+
+#Senators{
+    display: none;
+}
+
