@@ -16,8 +16,8 @@ app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'NewPass14' 
 app.config['MYSQL_DB'] = 'hostel_management_final'
-app.config['SERVER_NAME'] = '127.0.0.1:5000'
-# app.config['SERVER_NAME'] = 'localhost:5000'
+# app.config['SERVER_NAME'] = '127.0.0.1:5000'
+app.config['SERVER_NAME'] = 'localhost:5001'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////usr/local/mysql/data/hostel_management_final.db'/
 # app.config.from_object('app.config.Config')
 
@@ -1597,4 +1597,4 @@ def update_store_common_rooms():
 
 if __name__ == "__main__":
     # app.run(debug=True)
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    app.run(host='localhost', port=5001, debug=True)
