@@ -126,7 +126,7 @@ This brings home page of the webapp. Different pages open for different credenti
 ## Work Distribution
 ### Disha Chopra 
 Developed page for caretaker view, managed and resolved errors in the same. 
-Teste and debugged the database and web app. yuuu
+Teste and debugged the database and web app. 
 
 ### Hirva Patel
 Worked on backend and integrating it with front-end.
