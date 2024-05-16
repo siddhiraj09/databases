@@ -130,7 +130,6 @@ Teste and debugged the database and web app.
 
 ### Hirva Patel
 Worked on backend and integrating it with front-end.
-Developed back-end function calls
 Helped in resolving errors and debugging in front end.
 
 ### Harshi Chandrafari
@@ -141,7 +140,8 @@ Worked on the integration of pages with the backend
 ### Siddhi Rajpurohit
 Worked in front-end form functions development
 Created README file and supervised work
-Supervised worl
+Worked on the backend and integrated it with the front-end.
+Developed back-end function calls.
 
 ### Dhruv Gupta
 Developed the frontend using HTML, CSS, and Tailwind CSS
@@ -149,8 +149,10 @@ Worked extensively of front-end, resolving errors, making html pages, integratin
 Worked on the integration of pages with the backend
 
 ### Divyanshu Pandey
-Worked in front-end form development. 
-Contributed in README and supervised work
+Worked on the backend and integrated it with the front-end.
+Developed back-end function calls
+Worked in front-end form development using HTML,CSS ans Tailwind CSS 
+Contributed to README and supervised work
 
 ### Shubham More
 Worked on README file, helped in front-end function creations.
