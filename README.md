@@ -131,6 +131,8 @@ Teste and debugged the database and web app.
 ### Hirva Patel
 Worked on backend and integrating it with front-end.
 Helped in resolving errors and debugging in front end.
+Integrated Google Authentication.
+Protected against attacks.
 
 ### Harshi Chandrafari
 Developed the frontend using HTML, CSS, and Tailwind CSS
