@@ -136,8 +136,8 @@ Integrated Google Authentication.
 Created defense against SQL attacks.
 
 ### Harshi Chandrafari
-Developed the frontend using HTML, CSS, and Tailwind CSS
-Worked extensively of front-end, resolving errors, making html pages, integrating bootstrap, Javascript, Jquery and Flask. 
+Developed the front end using HTML, CSS, and Bootstrap.
+Worked extensively on front-end, resolving errors, making HTML pages, and integrating Bootstrap, Javascript, Jquery, and Flask. 
 Developed back-end function calls and worked on the integration of pages with the backend.
 
 ### Siddhi Rajpurohit
