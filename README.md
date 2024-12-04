@@ -138,7 +138,7 @@ Created defense against SQL attacks.
 ### Harshi Chandrafari
 Developed the frontend using HTML, CSS, and Tailwind CSS
 Worked extensively of front-end, resolving errors, making html pages, integrating bootstrap, Javascript, Jquery and Flask. 
-Worked on the integration of pages with the backend
+Developed back-end function calls and worked on the integration of pages with the backend.
 
 ### Siddhi Rajpurohit
 Worked in front-end form functions development
